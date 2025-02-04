@@ -2,6 +2,7 @@
 
 Soldier::Soldier(int health, int damage) : Unit(health), damage(damage)
 {
+    
 }
 
 void Soldier::attack(Unit &target)
