@@ -1,8 +1,8 @@
 #include "unit.hpp"
 
 Unit::Unit(int health) : health(health)
-{
-}
+{}
+
 const int Unit::get_health()
 {
     return health;
