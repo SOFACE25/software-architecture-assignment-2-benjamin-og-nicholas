@@ -13,6 +13,9 @@ void combat_medic_heal(Unit *self, Unit *target)
     }
 }
 
+// The test file does not use combat_medic_heal, but uses unit_heal_target.
+// Therefore we have added some code in unit.c, to make the medic unable to ressurect.
+
 void make_combat_medic(CombatMedic *self, int health, int damage)
 {
     make_soldier(&self->inherited, health, damage);

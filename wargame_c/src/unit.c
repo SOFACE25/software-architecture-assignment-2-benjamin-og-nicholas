@@ -50,7 +50,10 @@ void unit_attack_target(Unit *self, Unit *target)
 
 void unit_heal_target(Unit *self, Unit *target)
 {
-    self->vt->heal_target(self, target);
+    if (target->health != 0)
+    {
+        self->vt->heal_target(self, target);
+    }
 }
 
 void make_unit(Unit *self, int health)
